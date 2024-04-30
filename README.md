@@ -5,6 +5,8 @@ A Discord webhook to send messages of GSA Auctions listings.
 - Create a `config.json`
 - Add a field for the `webhookUrl` and set it to your webhook's URL
 - Add a field called `searchOptions` and set it to the URL queries
+  - Don't set the `page`, `size`, `advanced`, or `searchType`
+  - Go to the site and set your filters, then copy the query string
 - (Optional) add a `username` field for a custom bot name (default `GSA Auctions`)
 - (Optional) add an `avatarUrl` field for a custom bot icon (default <img src="https://www.netizen.net/media/gsa.jpeg" style="width: 1em;">)
 
