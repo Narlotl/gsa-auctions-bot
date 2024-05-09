@@ -10,6 +10,7 @@ A Discord webhook to send messages of GSA Auctions listings.
 - Run `node index` every time you want to send the messages
 - (Optional) add a `username` field for a custom bot name (default `GSA Auctions`)
 - (Optional) add an `avatarUrl` field for a custom bot icon (default <img src="https://www.netizen.net/media/gsa.jpeg" style="width: 1em;">)
+  - Discord doesn't allow local pictures, so it has to be a URL
 
 ### Example
 Show all active listings in California
