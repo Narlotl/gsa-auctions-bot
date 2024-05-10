@@ -1,10 +1,13 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync } from 'fs';
 import puppeteer from 'puppeteer';
 import { WebhookClient, EmbedBuilder } from 'discord.js';
 
 const config = JSON.parse(readFileSync('config.json', 'utf-8'));
 if (!config.webhookUrl)
     throw new Error('Missing webhook URL');
+
+if (!existsSync('ids.txt'))
+    writeFileSync('ids.txt', '');
 
 const oldIds = readFileSync('ids.txt', 'utf-8'), newIds = [];
 const templateImage = readFileSync('image.txt', 'utf-8').substring(0, 50);
