@@ -2,6 +2,7 @@
 A Discord webhook to send messages of GSA Auctions listings.
 ## Getting started
 - Clone the repo
+- Run `npm install`
 - Create a `config.json`
 - Add a field for the `webhookUrl` and set it to your webhook's URL
 - Add a field called `searchOptions` and set it to the URL queries
